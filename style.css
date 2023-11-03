@@ -1,0 +1,61 @@
+div{
+    font-family: Roboto,Arial;
+}
+.main_panel{
+    display: grid;
+    grid-template-columns:300px  1fr;
+
+}
+
+.main_connect{
+    position: fixed;
+    top: 0px;
+    left:0px;
+    bottom: 0px;
+    width: 300px;
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 5fr;
+    row-gap: 15px;
+}
+
+.main_display{
+    background-color: aqua;
+}
+
+.connect_link{
+    background-color: black;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.connect_link:hover{
+    transition-duration: 500ms;
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.vertical_space{
+    margin-top: 50px;
+}
+
+.field-of-study{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.last-update{
+    text-align: center;
+    
+}
+
+.updated-time{
+    background-color: brown;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
