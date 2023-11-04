@@ -1,0 +1,32 @@
+.connect{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.icon{
+  height: 50px;
+  width: 50px;
+}
+
+.contact-information{
+  padding-top: 0.5%;
+  font-size: 30px;
+}
+
+.graduate-picture{
+  height: 300px;
+  
+}
+
+.main-panel{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.connect-panel{
+  border-style: solid;
+  border-color: gray;
+  background-color: white;
+}
+
+

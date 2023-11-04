@@ -1,0 +1,62 @@
+.background{
+  height: 1000px;
+  left: 0;
+  right: 0;
+  background-image: url('picture/background.jpg');
+}
+
+body{
+  margin: 0;
+
+}
+div{
+  font-family: Roboto,Arial;
+}
+.main_panel{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.header-all{
+  position: fixed;
+  right:0;
+  left:0;
+  top:0;
+}
+.header-content{
+  
+  background-color: gray;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+  height: 100px;
+}
+
+.header-background{
+  top:0;
+  left:0;
+  right:0;
+  height:100px;
+  background: linear-gradient(to top, #c5d5fa, #c3dc99);
+}
+
+.header-space{
+  height:200px;
+  width: 100%;
+}
+
+.connect_link{
+  background-color: black;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+  padding-top: 5%;
+  justify-content: center;
+}
+
+.connect_link:hover{
+  transition-duration: 500ms;
+  color:gray;
+  cursor: pointer;
+}
