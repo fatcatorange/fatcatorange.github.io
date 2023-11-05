@@ -2,7 +2,7 @@
   height: 1000px;
   left: 0;
   right: 0;
-  background-image: url('picture/background.jpg');
+  background-image: url('picture/contact_me_background.jpg');
 }
 
 body{
@@ -23,6 +23,7 @@ div{
   right:0;
   left:0;
   top:0;
+  z-index: 10;
 }
 .header-content{
   
