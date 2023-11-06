@@ -38,7 +38,7 @@ window.onload = function(){
     contact_me_button.addEventListener("click",function(event){
       window.location.href ="../../contact_me.html";
     })
-  },100)
+  },500)
 
 }
 
