@@ -1,4 +1,3 @@
-let background_size = 1000;
 window.onload = function(){
 
   let headerPlaceholder = document.getElementById("header-place");
@@ -11,11 +10,10 @@ window.onload = function(){
       background.style.display = "block";
       background.style.opacity = "1";
       let device_height = screen.height;
-      console.log(device_height);
       //console.log(background.style.height);
-      if(background_size < screen.height)
+      if(background.offsetHeight - 200 < screen.height)
       {
-        background.style.height = screen.height + "px";
+        background.style.height = screen.height-200 + "px";
       }
   })
   .catch(error => {
