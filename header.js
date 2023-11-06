@@ -9,7 +9,7 @@ window.onload = function(){
       headerPlaceholder.innerHTML = headerContent;
       background.style.display = "block";
       background.style.opacity = "1";
-      let device_height = screen.height;
+      let device_height = window.innerHeight;
       //console.log(background.style.height);
       if(background.offsetHeight - 200 < screen.height)
       {
