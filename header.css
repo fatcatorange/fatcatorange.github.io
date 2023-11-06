@@ -3,6 +3,9 @@
   left: 0;
   right: 0;
   background-image: url('picture/contact_me_background.jpg');
+  display: block;
+  opacity: 0;
+  transition-duration: 1s;
 }
 
 body{
@@ -61,3 +64,4 @@ div{
   color:gray;
   cursor: pointer;
 }
+
