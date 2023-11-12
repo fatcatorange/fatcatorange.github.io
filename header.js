@@ -13,7 +13,7 @@ window.onload = function(){
       //console.log(background.style.height);
       if(background.offsetHeight - 200 < screen.height)
       {
-        background.style.height = screen.height-200 + "px";
+        background.style.height = screen.height + "px";
       }
   })
   .catch(error => {
