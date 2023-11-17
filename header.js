@@ -30,7 +30,6 @@ window.onload = function(){
     }, 100); // 每秒检查一次
   }
   
-  // 用法示例
   waitForElementToAppear('about_me_button', function(element) {
     let about_me_button = document.getElementById("about_me_button");
     about_me_button.addEventListener("click",function(event){
@@ -45,7 +44,7 @@ window.onload = function(){
   
     let game_development_button = document.getElementById("game_development_button");
     game_development_button.addEventListener("click",function(event){
-      window.location.href ="../../leetcode_record.html";
+      window.location.href ="../../game_development.html";
     })
   
     let web_development_button = document.getElementById("web_development_button");
