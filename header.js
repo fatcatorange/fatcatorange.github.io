@@ -2,7 +2,7 @@ window.onload = function(){
 
   let headerPlaceholder = document.getElementById("header-place");
   let background = document.getElementById("background");
-  fetch('./header.html',{mode: 'no-cors'})
+  fetch('../../header.html',{mode: 'no-cors'})
   .then(response => response.text())
   .then(headerContent => {
       // 将header内容插入到占位符位置
@@ -11,10 +11,10 @@ window.onload = function(){
       background.style.opacity = "1";
       let device_height = window.innerHeight;
       //console.log(background.style.height);
-      if(background.offsetHeight - 200 < screen.height)
+      /*if(background.offsetHeight - 200 < screen.height)
       {
         background.style.height = screen.height + "px";
-      }
+      }*/
   })
   .catch(error => {
       console.error('加载header内容时发生错误：', error);

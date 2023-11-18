@@ -1,5 +1,8 @@
 .background{
-
+  min-width:1000px;
+  padding-bottom: 100px;
+  min-height: 1500px;
+  width: 100%;
   left: 0;
   right: 0;
   background-image: url('picture/contact_me_background.jpg');
