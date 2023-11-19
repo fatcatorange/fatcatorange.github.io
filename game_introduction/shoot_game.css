@@ -38,3 +38,13 @@
 .final-boss-picture{
   padding-left:33%;
 }
+
+.weapon-picture{
+  padding-left: 47%;
+}
+
+.game-background{
+  background-image: url(shoot-game-picture/galaxy.jpg);
+  opacity: 0;
+  transition-duration: 1s;
+}

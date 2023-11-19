@@ -5,10 +5,9 @@ window.onload = function(){
   fetch('../../header.html',{mode: 'no-cors'})
   .then(response => response.text())
   .then(headerContent => {
-      // 将header内容插入到占位符位置
-      headerPlaceholder.innerHTML = headerContent;
       background.style.display = "block";
       background.style.opacity = "1";
+      headerPlaceholder.innerHTML = headerContent;
       let device_height = window.innerHeight;
       //console.log(background.style.height);
       /*if(background.offsetHeight - 200 < screen.height)
@@ -17,7 +16,7 @@ window.onload = function(){
       }*/
   })
   .catch(error => {
-      console.error('加载header内容时发生错误：', error);
+      console.error('header error：', error);
   });
 
   function waitForElementToAppear(elementId, callback) {
