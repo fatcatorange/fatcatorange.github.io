@@ -1,0 +1,14 @@
+.split-game-picture{
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+}
+
+.game-picture{
+  width: 1000px;
+}
+
+.rpg-background{
+  background-image: url("rpg-game-picture/temple-6594770_1280.jpg");
+  opacity: 0;
+  transition-duration: 1s;
+}

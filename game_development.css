@@ -24,14 +24,14 @@ h2{
 }
 
 .game-picture{
-  width: 300px;
+  width: 500px;
   border-right: 0px;
   top:0%;
 }
 
 .game-content{
   display: grid;
-  grid-template-columns: 1fr 300px 2fr 1fr;
+  grid-template-columns: 1fr 500px 2fr 1fr;
   column-gap: 5px;
 }
 
