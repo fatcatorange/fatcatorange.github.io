@@ -12,3 +12,13 @@
   opacity: 0;
   transition-duration: 1s;
 }
+
+.control-panel{
+  display: grid;
+  margin-left: 5%;
+  margin-right: 5%;
+  grid-template-columns: 300px 1fr;
+  column-gap: 10px;
+  border-style: solid;
+  background-color: white;
+}
