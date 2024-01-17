@@ -22,3 +22,18 @@
   border-style: solid;
   background-color: white;
 }
+
+.feature-panel{
+  border-style: solid;
+  background-color: white;
+}
+
+.feature-block{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.picture-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
