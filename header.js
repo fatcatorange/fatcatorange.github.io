@@ -48,7 +48,7 @@ window.onload = function(){
   
     let web_development_button = document.getElementById("web_development_button");
     web_development_button.addEventListener("click",function(event){
-      window.location.href ="../../leetcode_record.html";
+      window.location.href ="../../web_development.html";
     })
   
     let contact_me_button = document.getElementById("contact_me_button");

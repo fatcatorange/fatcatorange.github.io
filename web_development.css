@@ -1,0 +1,14 @@
+h2{
+    margin: 0;
+}
+
+.graduate-picture{
+    height: 300px;
+    border-radius: 150px;
+    border-color: black;
+    border-style: solid;
+  }
+
+.project-item{
+    padding:  10px;
+}
