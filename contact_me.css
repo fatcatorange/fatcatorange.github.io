@@ -63,11 +63,10 @@
 
 .contact-me-background{
   background-image: url(picture/contact_me_background.jpg);
-  height:1000px;
 }
 
 .introduction{
-  margin-bottom: 300px;
+  margin-bottom: 10vh;
 }
 
 h2{

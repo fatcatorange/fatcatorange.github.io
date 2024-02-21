@@ -1,18 +1,20 @@
 .background{
-  min-width:1000px;
-  padding-bottom: 100px;
-  min-height: 1500px;
+  min-width:100vw;
+  min-height: 80vh;
+  padding-top: 10vh;
   width: 100%;
   left: 0;
   right: 0;
-  background-image: url('picture/contact_me_background.jpg');
+  background-image: url('picture/background.jpg');
+  background-size: 100vw;
   display: block;
   opacity: 0;
   transition-duration: 1s;
+  margin:0px;
 }
 
 body{
-  margin: 0;
+  margin: 0px;
 
 }
 div{
@@ -37,19 +39,19 @@ div{
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
   row-gap: 15px;
-  height: 100px;
+  height: 10vh;
 }
 
 .header-background{
   top:0;
   left:0;
   right:0;
-  height:100px;
+  height:10vh;
   background: linear-gradient(to top, #c5d5fa, #c3dc99);
 }
 
 .header-space{
-  height:200px;
+  height:10vh;
   width: 100%;
 }
 
