@@ -1,7 +1,6 @@
 
-const displayList = ["./game_display/3d-rpg.png","./game_display/Shoot 'em Up Game.png","./game_display/developingGame.png"]
-const introduction_url = ["../game_introduction/rpg-game.html","../game_introduction/shoot_game.html","../game_introduction/new-3d-game.html"]
-const game_title = ["3D RPG Game","shoot'em Up Game","Project Under Development"]
+import { displayList,game_title } from './3d-game-data.mjs'
+
 
 var displayContent = document.createElement('img');
 
@@ -15,14 +14,14 @@ displayContent.className = 'display-content'
 
 displayContent.src = displayList[nowImage]
 
-var container = document.getElementById('game-display-container');
+var container = document.getElementById('web-display-container');
 container.appendChild(displayContent);
 
 var canChange = true;
 
-var button_container = document.getElementById('content-button-container');
+var button_container = document.createElement('div');
 
-var titleObject = document.getElementById('game-title');
+var titleObject = document.getElementById('web-title');
 
 button_container.className = "content-button-container"
 for(let i=0;i<size;i++)
@@ -49,7 +48,7 @@ for(let i=0;i<size;i++)
     button_container.append(contentButton); 
     buttonArray.push(contentButton);
 }
-
+container.append(button_container);
 
 buttonArray[0].style.backgroundColor = "black"
 titleObject.innerText = game_title[0];
@@ -71,8 +70,5 @@ setInterval(()=>{
     },1000)
 },5000)
 
-displayContent.addEventListener("click",function(){
-    window.location.href = introduction_url[nowImage];
-})
 
 

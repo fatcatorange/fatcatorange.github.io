@@ -11,10 +11,14 @@
     height:500px;
     padding: 0px;
     margin:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .display-content{
-    width: 100%;
+    max-width: 100%;
+    min-width: 50%;
     height: 90%;
     object-fit: cover;
     transition-duration: 1s;
