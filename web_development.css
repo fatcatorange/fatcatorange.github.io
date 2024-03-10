@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .web-dev-container{
     display: flex;
     justify-content: center;

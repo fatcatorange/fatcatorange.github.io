@@ -23,7 +23,8 @@ div{
 .main_panel{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .header-all{

@@ -14,9 +14,9 @@ window.onload = function(){
         window.location.href ="../../index.html";
       })
     
-      let leetcode_record_button = document.getElementById("leetcode_record_button");
+      let leetcode_record_button = document.getElementById("note_button");
       leetcode_record_button.addEventListener("click",function(event){
-        window.location.href ="../../leetcode_record.html";
+        window.location.href ="../../note.html";
       })
     
       let game_development_button = document.getElementById("game_development_button");
