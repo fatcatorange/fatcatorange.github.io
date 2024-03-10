@@ -21,7 +21,7 @@
     min-width: 50%;
     height: 90%;
     object-fit: cover;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     cursor: pointer;
 }
 

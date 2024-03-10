@@ -44,11 +44,14 @@ for(let i=0;i<size;i++)
         canChange = false;
         setTimeout(()=>{
             displayContent.src = displayList[nowImage];
-            nextImage.src = displayList[(nowImage + 1)%size];
-            titleObject.innerText = game_title[nowImage];
-            buttonArray[nowImage].style.backgroundColor = "black"
-            displayContent.style.opacity = 1;
-        },1000)
+            displayContent.onload = ()=>{
+                setTimeout(()=>{
+                    titleObject.innerText = game_title[nowImage];
+                    buttonArray[nowImage].style.backgroundColor = "black"
+                    displayContent.style.opacity = 1;
+                },500)
+            }
+        },500)
     })
     button_container.append(contentButton); 
     buttonArray.push(contentButton);
@@ -69,11 +72,14 @@ setInterval(()=>{
     displayContent.style.opacity = 0;
     setTimeout(()=>{
         displayContent.src = displayList[nowImage];
-        nextImage.src = displayList[(nowImage + 1)%size];
-        titleObject.innerText = game_title[nowImage];
-        buttonArray[nowImage].style.backgroundColor = "black"
-        displayContent.style.opacity = 1;
-    },1000)
+        displayContent.onload = ()=>{
+            setTimeout(()=>{
+                titleObject.innerText = game_title[nowImage];
+                buttonArray[nowImage].style.backgroundColor = "black"
+                displayContent.style.opacity = 1;
+            },500)
+        }
+    },500)
 },5000)
 
 displayContent.addEventListener("click",function(){
