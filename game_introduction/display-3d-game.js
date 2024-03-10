@@ -23,6 +23,9 @@ var button_container = document.createElement('div');
 
 var titleObject = document.getElementById('web-title');
 
+let nextImage = document.createElement('src');
+nextImage.src = displayList[0];
+
 button_container.className = "content-button-container"
 for(let i=0;i<size;i++)
 {
@@ -39,7 +42,8 @@ for(let i=0;i<size;i++)
         displayContent.style.opacity = 0;
         canChange = false;
         setTimeout(()=>{
-            displayContent.src = displayList[nowImage]
+            displayContent.src = displayList[nowImage];
+            nextImage.src = displayList[(nowImage + 1)%size];
             titleObject.innerText = game_title[nowImage];
             buttonArray[nowImage].style.backgroundColor = "black"
             displayContent.style.opacity = 1;
@@ -63,7 +67,8 @@ setInterval(()=>{
     nowImage = (nowImage + 1)%size;
     displayContent.style.opacity = 0;
     setTimeout(()=>{
-        displayContent.src = displayList[nowImage]
+        displayContent.src = displayList[nowImage];
+        nextImage.src = displayList[(nowImage + 1)%size];
         titleObject.innerText = game_title[nowImage];
         buttonArray[nowImage].style.backgroundColor = "black"
         displayContent.style.opacity = 1;
