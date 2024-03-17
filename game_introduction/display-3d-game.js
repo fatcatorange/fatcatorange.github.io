@@ -67,7 +67,7 @@ setInterval(()=>{
     buttonArray[nowImage].style.backgroundColor = "white"
     nowImage = (nowImage + 1)%size;
     displayContent.style.opacity = 0;
-    setTimeout(()=>{
+    setTimeout(()=>{ 
         displayContent.src = displayList[nowImage];
         displayContent.onload = ()=>{
             setTimeout(()=>{
